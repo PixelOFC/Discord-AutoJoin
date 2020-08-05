@@ -1,6 +1,7 @@
 # Discord-AutoJoin
 autojoin in c# for discord simple as that
 # How to use
+change the namespace to your namespace
 change the "serverid" in AutoJoin.cs, add to your vs project
 for joining just put on your code `AutoJoin.AutoJoinVoid();`
 
