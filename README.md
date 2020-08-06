@@ -8,6 +8,7 @@ for joining just put on your code `AutoJoin.JoinServer(serverid);`.
 ## FAQ
 Q: What is serverid?
 A: Its the final invite code, example:
+
 https://discord.gg/5X6ZrYP > 5X6ZrYP `AutoJoin.JoinServer("5X6ZrYP")`
 
 ## Licensing information
