@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ur_namespace
+namespace autojoincsharp
 {
     class AutoJoin
     {
@@ -129,7 +129,7 @@ namespace ur_namespace
             }
 
             RequestInvite("serverid", text2);
-            //serverid is the final part of an invite ex: https://discord.gg/serverid
+            //serverid is the final part of an invite eg: https://discord.gg/serverid
         }
     }
 }
